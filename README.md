@@ -25,3 +25,23 @@ https://github.com/MuzaffarovAbdurashidkhon/bot-arduino/assets/116067226/fda593c
 
 Для контроллера использовалась плата Arduino Pro Micro. Джойствик отвечал за движение по оси Y,X
 
+![photo_2023-06-12_00-59-01](https://github.com/MuzaffarovAbdurashidkhon/bot-arduino/assets/116067226/f066537f-93ec-4936-9b58-ac70c2b8e2c0)
+![photo_2023-06-12_00-58-55](https://github.com/MuzaffarovAbdurashidkhon/bot-arduino/assets/116067226/2297a1e0-3a49-45dd-8b5c-c804429b4c0d)
+
+В контроллере использовалось:
+
+Arduino Pro Micro,
+NRF,
+NRF+,
+повербанк,
+потенциометр,
+кнопка,
+джойстик.
+
+Использованные библиотеки:
+
+Servo by Michael Margolis (управление сервоприводами),
+Adafruit NeoPixel by Adafruit (настройка светодиодной ленты),
+RF24 by TMRh20 (управление радиомодулем).
+1. Код для контроллера:
+
