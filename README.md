@@ -11,12 +11,19 @@
 В роботе использовалось:
 
 Motor Shield,
+
 Arduino Leonardo/Amperka Iskra Neo,
+
 NRF,
+
 NRF+,
+
 акумуляторы 18650 x2,
+
 DC motor x2,
+
 RGB LED  (12 светодиода),
+
 servo 360 x1.
 
 
