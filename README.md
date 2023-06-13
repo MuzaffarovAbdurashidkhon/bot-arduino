@@ -70,22 +70,32 @@ RF24 radio(8, 10);
 int data[2];
 
 void setup(){
+
    radio.begin();
+   
   radio.setChannel(4);
+  
   radio.setDataRate(RF24_1MBPS);
+  
   radio.setPALevel(RF24_PA_HIGH);
+  
   radio.openWritingPipe(0x1234567890LL);
+  
   radio.stopListening();
 }
 
 void loop(){
 
    int valx = analogRead (VRx);
+   
    int valy = analogRead (VRy);
+   
    data[0] = valx;
+   
    data[1] = valy;
 
   radio.write(&data, sizeof(data));
+  
   delay(100);
 }
 
@@ -120,26 +130,36 @@ int data[2];
 
  
 void setup() {
+
   for (int i = 4; i < 8; i++) {     
+  
     pinMode(i, OUTPUT);
   }
     Serial.begin(9600);
 
   radio.begin();
-  radio.setChannel(4);
+  
+    radio.setChannel(4);
+    
   radio.setDataRate(RF24_1MBPS);
+  
   radio.setPALevel(RF24_PA_HIGH);
+  
   radio.openReadingPipe(0, 0x1234567890LL);
+  
   radio.startListening();
 } 
  
 void loop() {
 
   if (radio.available()){
+  
     radio.read(&data, sizeof(data));
 
    for (int i = 0; i < matrix.numPixels(); i++) {
+   
       matrix.setPixelColor(i, 255, 255, 255);
+      
       matrix.show();  
     }
 
